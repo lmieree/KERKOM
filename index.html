@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaruh Medsos terhadap Jam Tidur dan IPK Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pengaruh Medsos terhadap Jam Tidur dan IPK Mahasiswa</h1>
+            <div class="members">
+                <ul>
+                    <li>Oleh : Kelompok 3 Kelas F</li>
+                    <li>Allensia N.A.P   [1462200074]</li>
+                    <li>Tyo Surya Agung [1462200230]</li>
+                    <li>Dimas ian ibrahim [1462200232]</li>
+                    <li>Tiara Finda Apriola	 [1462200256]</li>
+                    <li>Krisna Harsyandi P. [1462200290]</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="nama">Nama Mahasiswa:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama mahasiswa">
+        </div>
+        
+        <div class="input-container">
+            <label for="Q1">Jenis Kelamin:</label>
+            <input type="number" id="Q1" min="0" max="1" step="1">
+            <div class="form-text">0 = perempuan, 1 = laki-laki</div>
+        </div>
+        
+        <div class="input-container">
+            <label for="Q2">Tingkat Semester:</label>
+            <input type="number" id="Q2" min="0" max="3" step="1">
+            <div class="form-text">0 = tingkat 1, 1 = tingkat 3, 2 = tingkat 5, 3 = tingkat 7</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q3">Penggunaan Media Sosial > 6 jam/hari:</label>
+            <input type="number" id="Q3" min="0" max="1" step="1">
+            <div class="form-text">0 = tidak, 1 = ya</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q4">Tidur > 8 jam/hari:</label>
+            <input type="number" id="Q4" min="0" max="1" step="1">
+            <div class="form-text">0 = tidak, 1 = ya</div>
+        </div>
+        
+        <div class="input-container">
+            <label for="Q5">Merasa IPK Baik:</label>
+            <input type="number" id="Q5" min="0" max="1" step="1">
+            <div class="form-text">0 = tidak, 1 = ya</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q6">Media Sosial Mempengaruhi IPK:</label>
+            <input type="number" id="Q6" min="0" max="1" step="1">
+            <div class="form-text">0 = tidak, 1 = ya</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q7">Jumlah Platform Media Sosial yang Digunakan:</label>
+            <input type="number" id="Q7" min="0" max="1" step="1">
+            <div class="form-text">0 = satu platform, 1 = lebih dari satu platform</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q8">Tingkat Penggunaan Media Sosial:</label>
+            <input type="number" id="Q8" min="0" max="2" step="1">
+            <div class="form-text">0 = rendah, 1 = sedang, 2 = tinggi</div>
+        </div>
+
+        <div class="input-container">
+            <label for="Q9">Media Sosial Mempengaruhi Jam Tidur:</label>
+            <input type="number" id="Q9" min="0" max="1" step="1">
+            <div class="form-text">0 = tidak, 1 = ya</div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="predict()">Prediksi Pengaruh Medsos</button>
+        </div>
+        
+        <div id="result" class="result-container">
+            <h2>Hasil Prediksi</h2>
+            <p>Nilai skor: <span id="skor"></span></p>
+            <p>Pengaruh Media sosial : <span id="interpretasi"></span></p>
+            <p>Nama Mahasiswa: <span id="hasil-nama"></span></p>
+        </div>
+
+        <img src="images.png" alt="Logo Kominfo" class="logo">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
